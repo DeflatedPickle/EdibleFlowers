@@ -1,5 +1,6 @@
 {
     "schema_version": 1,
+    "mixin": ["${id}.mixins.json"],
     "quilt_loader": {
         "metadata": {
             "license": "MIT",
@@ -12,7 +13,6 @@
             "description": "${desc}",
             "contributors": {"${author}": "Owner"}
         },
-        "mixins": ["${id}.mixins.json"],
         "depends": [
             {
                 "versions": ">=${loader}-",
@@ -31,7 +31,6 @@
                 "id": "fabric-language-kotlin"
             }
         ],
-        "accessWidener": "${id}.accesswidener",
         "icon": "assets/${id}/icon.png",
         "intermediate_mappings": "net.fabricmc:intermediary",
         "entrypoints": {"init": [{
